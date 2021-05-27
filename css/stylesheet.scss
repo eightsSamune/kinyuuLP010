@@ -1,12 +1,28 @@
-.sec01{
-    background-color: lightblue;
+body{
+    max-width: 1920px;
 
-    .giji{
-        &::after{
-            // content: "\f108"; 疑似要素だと使えないアイコンもある？
-            content: "\f164";
-            // font-weight: 400;
-            font-family: "Font Awesome 5 Free";
-        }
+    font-family: "Arial";
+    text-align: center;
+
+    .continer{
+        max-width: 1660px;
     }
+}
+
+header{
+
+}
+
+.sec01{
+    // background-color: lightblue;
+    background-image: url(../images/main.png);
+
+    // .giji{
+    //     &::after{
+    //         // content: "\f108"; 疑似要素だと使えないアイコンもある？
+    //         content: "\f164";
+    //         // font-weight: 400;
+    //         font-family: "Font Awesome 5 Free";
+    //     }
+    // }
 }

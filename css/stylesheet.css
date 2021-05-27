@@ -1,9 +1,14 @@
-.sec01 {
-  background-color: lightblue;
+body {
+  max-width: 1920px;
+  font-family: "Arial";
+  text-align: center;
 }
 
-.sec01 .giji::after {
-  content: "\f164";
-  font-family: "Font Awesome 5 Free";
+body .continer {
+  max-width: 1660px;
+}
+
+.sec01 {
+  background-image: url(../images/main.png);
 }
 /*# sourceMappingURL=stylesheet.css.map */
