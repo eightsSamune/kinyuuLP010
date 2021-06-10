@@ -1,1 +1,25 @@
-/* No CSS *//*# sourceMappingURL=responsive.css.map */
+@media (max-width: 768px) {
+  .sp_only {
+    display: block;
+  }
+  .pc_only {
+    display: none;
+  }
+  body h1 {
+    font-size: 110px;
+  }
+  body h2 {
+    font-size: 35px;
+  }
+  body h3 {
+    font-size: 20px;
+  }
+  body p {
+    font-size: 10px;
+  }
+  body .container {
+    max-width: 740px;
+    min-width: 340px;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

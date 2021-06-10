@@ -1,1 +1,33 @@
+// ■スマホ用サイズ
+@media (max-width:768px){
 
+    // スマホ用表示フラグ
+    .sp_only{
+        display: block;
+    }
+    .pc_only{
+        display: none;
+    }
+
+    body{
+        h1{
+            font-size: 110px;
+        }
+        h2{
+            font-size: 35px;
+        }
+        h3{
+            font-size: 20px;
+        }
+        p{
+            font-size: 10px;
+        }
+    
+        .container{
+            max-width: 740px;
+            min-width: 340px;
+        }
+    }
+
+
+}

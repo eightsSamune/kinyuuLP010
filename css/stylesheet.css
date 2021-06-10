@@ -1,3 +1,11 @@
+.sp_only {
+  display: none;
+}
+
+.pc_only {
+  display: block;
+}
+
 body {
   max-width: 1920px;
   font-family: "Arial";
@@ -10,5 +18,11 @@ body .continer {
 
 .sec01 {
   background-image: url(../images/main.png);
+}
+
+.sec01 .giji::after {
+  font-weight: 400;
+  content: "\f164";
+  font-family: "Font Awesome 5 Free";
 }
 /*# sourceMappingURL=stylesheet.css.map */

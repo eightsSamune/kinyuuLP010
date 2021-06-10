@@ -1,3 +1,11 @@
+//PC用表示フラグ
+.sp_only{
+    display: none;
+}
+.pc_only{
+    display: block;
+}
+
 body{
     max-width: 1920px;
 
@@ -17,12 +25,20 @@ header{
     // background-color: lightblue;
     background-image: url(../images/main.png);
 
-    // .giji{
-    //     &::after{
-    //         // content: "\f108"; 疑似要素だと使えないアイコンもある？
-    //         content: "\f164";
-    //         // font-weight: 400;
-    //         font-family: "Font Awesome 5 Free";
-    //     }
-    // }
+    .giji{
+        &::after{
+            // 疑似要素での記載に困ったら公式をみる。
+            font-weight: 400;
+
+            content: "\f164";
+            font-family: "Font Awesome 5 Free";
+
+            // その他疑似要素記載例
+            // font-family: "Font Awesome 5 Brands"; 
+            // content: "\f099";
+
+            // font-family: "Font Awesome 5 Brands"; 
+            // content: "\f167";
+        }
+    }
 }

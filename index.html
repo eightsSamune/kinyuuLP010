@@ -2,8 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="エイトデザイン">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>エイトのLPコーディングポートフォリオ</title>
+    <title>ここにタイトル</title>
     <link rel="stylesheet" href="css/destyle.css">
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -38,6 +40,45 @@
 
       </section>
 
+      
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script>
+          // $(function(){
+          //   // メニュー上からスライド
+          //   $("#drawer_toggle").click(function(){
+
+          //     // ハンバーガーアイコン⇔バツアイコンの切り替え
+          //     if($(this).hasClass("fas fa-bars")){
+          //       $(this).removeClass("fas fa-bars");
+          //       $(this).toggleClass("fas fa-times");
+
+          //     }else{
+          //       $(this).removeClass("fas fa-times");
+          //       $(this).toggleClass("fas fa-bars");
+                
+          //     }
+
+          //     // 上からスライド
+          //     $("#global_nav").slideToggle();
+          //   });
+            
+          // });
+
+          // リンクのスムーススクロール
+          $(function(){
+            // #で始まるリンクをクリックしたら実行されます
+            $('a[href^="#"]').click(function() {
+              // スクロールの速度
+              let speed = 400; // ミリ秒で記述
+              let href= $(this).attr("href");
+              let target = $(href == "#" || href == "" ? 'html' : href);
+              let position = target.offset().top;
+              $('body,html').animate({scrollTop:position}, speed, 'swing');
+              return false;
+            });
+          });
+        </script>
         <script src="js/script.js"></script>
     </body>
 </html>
