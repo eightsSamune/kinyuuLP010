@@ -13,8 +13,11 @@ html {
 body {
     margin: 0 auto;
     padding: 0px;
-    font-family: "ヒラギノ角ゴ Pro W3", Hiragino Kaku Gothic Pro W3, "游ゴシック", YuGothic, "ヒラギノ角ゴシック Pro N", Hiragino Kaku Gothic ProN, "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-    // font-family: 'Noto Sans Japanese', sans-serif;
+
+    font-family: 'Noto Sans JP', sans-serif;
+    #title{
+        font-family: 'Quicksand', sans-serif;
+    }
 
     letter-spacing: 0.05rem;
     line-height: 1.5;
@@ -22,7 +25,7 @@ body {
     color: #686357;
     
     section{
-        width: 760px;
+        max-width: 760px;
         margin: 0 auto;
         
     }
@@ -52,6 +55,7 @@ header{
     color: #fff;
     min-height: 60px;
 
+
     .headerWrapper{
         min-height: 60px;
         
@@ -78,7 +82,7 @@ header{
         display: inline-block;
         padding: 5px 10px;
         margin: 30px auto;
-        font-size: 0.7rem;
+        font-size: 1.1rem;
         font-weight: 300;
         border-radius: 15px;
         background-color: #ffcd44;
@@ -107,11 +111,6 @@ header{
     font-family: 'Noto Sans JP', sans-serif;
 
     p{
-        // display: inline-block;
-        // padding-bottom: 2rem;
-        // padding-top: 0;
-        // margin-top: 0;
-        // margin-bottom: 0;
         letter-spacing: 0.05em;
         line-height: 1.8em;
         font-size: 1.6em;
@@ -338,7 +337,6 @@ header{
         color: #ffa1a1;
     }
 
-
     .jin-flexbox{
         .jin-shortcode-button{
             a{
@@ -355,8 +353,7 @@ footer{
         background-color: #DFDEDC;
 
         ul {
-            // width: 760px;//これは仮
-            width: 1136px;
+            max-width: 1136px;
 
             padding: 20px 0px;
 
@@ -366,15 +363,12 @@ footer{
             margin: 0 auto;
             display: block;
 
+            font-size: 1.2rem;
+
             .page-top-footer{
                 position: absolute;
-                right: -2px;
+                right: 10px;
                 top: 5px;
-
-                // .totop{
-                //     font-size: 3rem;
-                //     padding: 9px 30px;
-                // }
             }
 
             li{
@@ -392,12 +386,16 @@ footer{
         background-color: #60605a;
 
         .footer-inner{
-            // width: 760px;//これは仮
             max-width: 1136px;
             margin: 0 auto;
 
             padding: 15px 0;
 
+            display: flex;
+            justify-content: space-between;
+
+            font-size: 1.1rem;
+            
             a{
                 padding: 0 15px;
                 border-right: 1px solid #ddd;
@@ -408,8 +406,8 @@ footer{
 
             }
 
-            #copyright{
-                float: right;
+            .flexRight{
+                margin-top: 5px;
             }
         }
     }
@@ -452,11 +450,9 @@ footer{
     z-index: 10;
 
     .totop{
-        width: 55px;
-        height: 55px;
-        padding: 10px 12px;
+        padding: 4px 12px;
         background-color: #60605a;
-        border-radius: 80px;
+        border-radius: 30px;
 
         i{
             color: #fff;
@@ -494,7 +490,6 @@ footer{
     }
 }
 
-
 .header-box.animate {
     animation-name: down-fade-animation;
     animation-duration: 0.6s; 
@@ -506,19 +501,14 @@ footer{
     animation-delay: 0.6s;
     animation-fill-mode: forwards;
     filter: opacity(0);
-    // position: relative;
-    // z-index: 4; 
 }
-.fv.animate {
+article.animate {
     animation-name: up-fade-animation;
     animation-duration: 0.8s;
     animation-delay: 0.8s;
     animation-fill-mode: forwards;
     filter: opacity(0);
-    // position: relative;
-    // z-index: 4; 
 }
-
 
 @keyframes down-fade-animation {
     0% {

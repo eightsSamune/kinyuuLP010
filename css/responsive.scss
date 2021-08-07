@@ -1,3 +1,27 @@
+// ■ブレイクポイント
+@media (max-width:1200px){
+    section{
+        width: 96%;
+        margin: 0 2%;
+    }
+
+    footer{
+        .topicPath{    
+            ul {
+                padding: 20px 20px;
+            }
+        }
+        .mainFooter{
+            color: #fff;
+            background-color: #60605a;
+    
+            .footer-inner{    
+                padding: 15px 20px;
+            }
+        }
+    }
+}
+
 // ■スマホ用サイズ
 @media (max-width:768px){
 
@@ -9,25 +33,47 @@
         display: none;
     }
 
-    body{
-        h1{
-            font-size: 110px;
-        }
-        h2{
-            font-size: 35px;
-        }
-        h3{
-            font-size: 20px;
-        }
-        p{
-            font-size: 10px;
+
+    header{
+        min-height: 80px;
+    
+        .headerWrapper{
+            min-height: 80px;
+            justify-content: center;
+            // font-size: 2.4rem;
         }
     
-        .container{
-            max-width: 740px;
-            min-width: 340px;
+    }
+
+    .btnSec{
+        .jin-flexbox{
+            .jin-shortcode-button {
+                a{
+                    width: 280px;
+                }
+            }
         }
     }
 
+    .simple-box6{
+        width: 100%;
+    }
+    .kaisetsu-box2{
+        width: 100%;
+    }
 
+    .mainFooter{
+        .footer-inner{
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+
+        }
+    }
+
+    #page-top{
+        right: 20px;
+        bottom: 123px;
+    }
 }

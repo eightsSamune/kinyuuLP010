@@ -27,9 +27,10 @@
     <!-- safariでsmoothscrollに対応するためのpolyfill -->
     <script src="js/smoothscroll.js"></script>
 
+    <!-- googleFonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&family=Quicksand&display=swap" rel="stylesheet">
 
   </head>
 
@@ -38,17 +39,17 @@
     <header class="header-box animate">
       <div class="headerWrapper animate">
         <span class="tn-logo-size">
-          <a href="" rel="home" >
+          <a href="" rel="home" id="title">
             <font color="FDD835">Panna</font>cotta
           </a>
         </span>
       </div>
     </header>
 
-    <article>
+    <article class="animate">
 
       <!-- ■FV -->
-      <section class="fv animate">
+      <section class="fv">
         <a href="">
           <p class="category">借金18</p>
         </a>
@@ -78,7 +79,7 @@
 
         <div class="jin-flexbox">
           <div class="jin-shortcode-button jsb-visual-bound jsb-hover-down">
-            <a href="#" target="_self">
+            <a href="https://kogawa-saimuseiri.net/form/type2.php" target="_self" class="symBtn">
               <strong>借金減額シミュレーター<br>無料診断はこちら</strong>
             </a>
           </div>
@@ -111,7 +112,7 @@
 
         <div class="jin-flexbox">
           <div class="jin-shortcode-button jsb-visual-bound jsb-hover-down">
-            <a href="#" target="_self">
+            <a href="https://kogawa-saimuseiri.net/form/type2.php" target="_self" class="symBtn">
               <strong>借金減額シミュレーター<br>無料診断はこちら</strong>
             </a>
           </div>
@@ -151,7 +152,7 @@
 
         <div class="jin-flexbox">
           <div class="jin-shortcode-button jsb-visual-bound jsb-hover-down">
-            <a href="#" target="_self">
+            <a href="https://kogawa-saimuseiri.net/form/type2.php" target="_self" class="symBtn">
               <strong>借金減額シミュレーター<br>無料診断はこちら</strong>
             </a>
           </div>
@@ -222,7 +223,7 @@
 
         <div class="jin-flexbox">
           <div class="jin-shortcode-button jsb-visual-bound jsb-hover-down">
-            <a href="#" target="_self">
+            <a href="https://kogawa-saimuseiri.net/form/type2.php" target="_self" class="symBtn">
               <strong>借金減額シミュレーター<br>無料診断はこちら</strong>
             </a>
           </div>
@@ -252,7 +253,9 @@
 
         <h2>無料借金減額シミュレーター</h2>
 
-        <img src="img/kogawa.png" alt="">
+        <a href="https://kogawa-saimuseiri.net/form/type2.php" target="_self" class="symBtn">
+          <img src="img/kogawa.png" alt="">
+        </a>
 
         <p>
           <strong>督促状が届いて家族にバレるかも</strong><br>
@@ -268,7 +271,7 @@
 
         <div class="jin-flexbox">
           <div class="jin-shortcode-button jsb-visual-bound jsb-hover-down">
-            <a href="#" target="_self">
+            <a href="https://kogawa-saimuseiri.net/form/type2.php" target="_self" class="symBtn">
               <strong>借金減額シミュレーター</strong>
             </a>
           </div>
@@ -280,13 +283,12 @@
 
 
     <footer>
-
       <!-- パンくずリスト -->
       <div id="breadcrumb" class="topicPath">
         <ul>
           
           <!-- TOPへ戻るボタン -->
-          <div class="page-top-footer">
+          <div class="page-top-footer pc_only">
             <a class="totop" href="#"><i class="fas fa-chevron-up"></i></a>
           </div>
           
@@ -320,10 +322,16 @@
       <!-- メインフッター -->
       <div class="mainFooter">
         <div class="footer-inner">
-					<span id="privacy"><a href="#">TOP</a></span>
-					<span id="law"><a href="https://kogawa-saimuseiri.net/company.html">企業情報</a></span>
-					<span id="copyright" itemprop="copyrightHolder">
-            <i class="far fa-copyright"></i>2019–2021</span>
+          <div class="flexLeft">
+            <span id="privacy"><a href="#">TOP</a></span>
+            <span id="law"><a href="https://kogawa-saimuseiri.net/company.html">企業情報</a></span>
+          </div>
+
+          <div class="flexRight">
+            <span id="copyright" itemprop="copyrightHolder">
+              <i class="far fa-copyright"></i>2019–2021</span>
+          </div>
+
 				</div>
       </div>
 
@@ -397,6 +405,25 @@
           });
           return false;
         });
+      });
+
+
+      $(window).resize(function(event){
+        var width = $(window).width();
+
+        // $(".output1").text("横のサイズ" + width + "px");
+
+        var targetElm = $(".symBtn");
+
+        // 条件を設定する
+        if (width <= 768) {
+          targetElm.attr("href", "https://kogawa-saimuseiri.net/s/form/type2.php");
+        }
+        else {
+          targetElm.attr("href", "https://kogawa-saimuseiri.net/form/type2.php");
+          // $("h2").css("background", "skyblue");
+        }
+
       });
 
     </script>

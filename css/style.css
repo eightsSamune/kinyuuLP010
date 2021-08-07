@@ -14,14 +14,18 @@ html {
 body {
   margin: 0 auto;
   padding: 0px;
-  font-family: "ヒラギノ角ゴ Pro W3", Hiragino Kaku Gothic Pro W3, "游ゴシック", YuGothic, "ヒラギノ角ゴシック Pro N", Hiragino Kaku Gothic ProN, "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   letter-spacing: 0.05rem;
   line-height: 1.5;
   color: #686357;
 }
 
+body #title {
+  font-family: 'Quicksand', sans-serif;
+}
+
 body section {
-  width: 760px;
+  max-width: 760px;
   margin: 0 auto;
 }
 
@@ -76,7 +80,7 @@ header .headerWrapper a {
   display: inline-block;
   padding: 5px 10px;
   margin: 30px auto;
-  font-size: 0.7rem;
+  font-size: 1.1rem;
   font-weight: 300;
   border-radius: 15px;
   background-color: #ffcd44;
@@ -301,18 +305,19 @@ footer .topicPath {
 }
 
 footer .topicPath ul {
-  width: 1136px;
+  max-width: 1136px;
   padding: 20px 0px;
   position: relative;
   z-index: 1;
   letter-spacing: 0;
   margin: 0 auto;
   display: block;
+  font-size: 1.2rem;
 }
 
 footer .topicPath ul .page-top-footer {
   position: absolute;
-  right: -2px;
+  right: 10px;
   top: 5px;
 }
 
@@ -333,6 +338,13 @@ footer .mainFooter .footer-inner {
   max-width: 1136px;
   margin: 0 auto;
   padding: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.1rem;
 }
 
 footer .mainFooter .footer-inner a {
@@ -344,8 +356,8 @@ footer .mainFooter .footer-inner #privacy a {
   border-left: 1px solid #ddd;
 }
 
-footer .mainFooter .footer-inner #copyright {
-  float: right;
+footer .mainFooter .footer-inner .flexRight {
+  margin-top: 5px;
 }
 
 .totop {
@@ -377,11 +389,9 @@ footer .mainFooter .footer-inner #copyright {
 }
 
 #page-top .totop {
-  width: 55px;
-  height: 55px;
-  padding: 10px 12px;
+  padding: 4px 12px;
   background-color: #60605a;
-  border-radius: 80px;
+  border-radius: 30px;
 }
 
 #page-top .totop i {
@@ -477,7 +487,7 @@ footer .mainFooter .footer-inner #copyright {
           filter: opacity(0);
 }
 
-.fv.animate {
+article.animate {
   -webkit-animation-name: up-fade-animation;
           animation-name: up-fade-animation;
   -webkit-animation-duration: 0.8s;
