@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <!-- <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/ fb# website: http://ogp.me/ns/website#"> -->
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <meta name="author" content="エイトデザイン">
     <meta name="description" content="">
     <meta name="keywords" content="">
     
@@ -18,98 +15,384 @@
 
     <!-- favicon -->
     <link rel="icon" href="">
-    
-    <!-- ogp -->
-    <!-- <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/ fb# prefix属性: http://ogp.me/ns/prefix属性#"> -->
-    <meta property="og:url" content="ページのURL" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="ページのタイトル" />
-    <meta property="og:description" content="ページのディスクリプション" />
-    <meta property="og:site_name" content="サイト名" />
-    <meta property="og:image" content="サムネイル画像のURL" />
 
     <!-- css -->
     <link rel="stylesheet" href="css/destyle.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     
     <!-- js -->
     <!-- safariでsmoothscrollに対応するためのpolyfill -->
     <script src="js/smoothscroll.js"></script>
-    
-    <!-- <script src="js/jquery-3.6.0.min.js"></script> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
 
   </head>
 
   <body>
 
     <header>
-      <div>
-        <h2>Eight's Design</h2>
-        
-        <div>
-          <p>PORTFOLIO</p>
-          <p>ABOUT</p>
-          <p>CONTACT</p>
-        </div>
-        
+      <div class="headerWrapper">
+        <span class="tn-logo-size">
+          <a href="" rel="home">
+            <font color="FDD835">Panna</font>cotta
+          </a>
+        </span>
       </div>
     </header>
 
-    <section class="sec01">
-      <div>
-        <a><i class="fas fa-desktop"></i>ここにテキスト</a>
+    <article>
 
-      </div>
-      <div>
-        <a class="giji">疑似要素のテキスト</a>
+      <!-- ■FV -->
+      <section class="fv">
+        <p class="category">借金18</p>
+        
+        <img src="img/fvImg.jpg" alt="fv">
+        
+        <p class="fvpr">PR こがわ法務事務所</p>
+      </section>
 
-      </div>
+      <!-- ■画像セクション1 -->
+      <section class="imgSec01 imgSec">
+        <img src="img/001.jpg" alt="">
+        <img src="img/002-819x1024.jpg" alt="">
+        <img src="img/003.jpg" alt="">
+        <img src="img/004005.jpg" alt="">
+      </section>
 
-    </section>
+      <!-- ■ボタンセクション1 -->
+      <section class="btnSec01 btnSec">
+        <p>
+          <span class="marker">
+            <strong>今の借金がいくら減るか<br>早速チェック！</strong>
+          </span>
+          <br>
+          <strong>↓↓↓</strong>
+        </p>
 
-    
+        <div class="jin-flexbox">
+          <div class="jin-shortcode-button jsb-visual-bound jsb-hover-down">
+            <a href="#" target="_self">
+              <strong>借金減額シミュレーター<br>無料診断はこちら</strong>
+            </a>
+          </div>
+        </div>
 
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-      <script>
-        // $(function(){
-        //   // メニュー上からスライド
-        //   $("#drawer_toggle").click(function(){
+        <p>
+          <strong>
+            月間<span class="red">3万人以上</span>が利用中
+          </strong>
+        </p>
 
-        //     // ハンバーガーアイコン⇔バツアイコンの切り替え
-        //     if($(this).hasClass("fas fa-bars")){
-        //       $(this).removeClass("fas fa-bars");
-        //       $(this).toggleClass("fas fa-times");
+      </section>
 
-        //     }else{
-        //       $(this).removeClass("fas fa-times");
-        //       $(this).toggleClass("fas fa-bars");
-              
-        //     }
+      <!-- ■画像セクション2 -->
+      <section class="imgSec02 imgSec">
+        <img src="img/006-819x1024.jpg" alt="">
+        <img src="img/007.jpg" alt="">
+      </section>
 
-        //     // 上からスライド
-        //     $("#global_nav").slideToggle();
-        //   });
+
+      <!-- ■ボタンセクション2 -->
+      <section class="btnSec02 btnSec">
+        <p>
+          <span class="marker">
+            <strong>今の借金がいくら減るか<br>早速チェック！</strong>
+            <!-- 今の借金がいくら減るか<br>早速チェック！ -->
+          </span>
+          <br>
+          <strong>↓↓↓</strong>
+        </p>
+
+        <div class="jin-flexbox">
+          <div class="jin-shortcode-button jsb-visual-bound jsb-hover-down">
+            <a href="#" target="_self">
+              <strong>借金減額シミュレーター<br>無料診断はこちら</strong>
+            </a>
+          </div>
+        </div>
+
+        <p>
+          <strong>
+            月間<span class="red">3万人以上</span>が利用中
+          </strong>
+        </p>
+
+      </section>
+
+      <!-- 見出し -->
+      <section>
+        <h2 class="h2Title">SNSの声</h2>
+      </section>
+
+      <!-- ■画像セクション3 -->
+      <section class="btnSec03 btnSec">
+        <img src="img/fb01.png" alt="">
+        <img src="img/fb02.png" alt="">
+        <img src="img/fb03.png" alt="">
+
+      </section>
+
+
+      <!-- ■ボタンセクション３ -->
+      <section class="btnSec03 btnSec">
+        <p>
+          <span class="marker">
+            <strong>毎日大損中！？<br>毎月の引き落とし額が<br>半分以下に！</strong>
+          </span>
+          <br>
+          <strong>↓↓↓</strong>
+        </p>
+
+        <div class="jin-flexbox">
+          <div class="jin-shortcode-button jsb-visual-bound jsb-hover-down">
+            <a href="#" target="_self">
+              <strong>借金減額シミュレーター<br>無料診断はこちら</strong>
+            </a>
+          </div>
+        </div>
+
+        <p>
+          <strong>
+            <span class="red">減額成功</span>の声続々
+          </strong>
+        </p>
+
+      </section>
+
+      <!-- 見出し -->
+      <section>
+        <h2 class="h2Title">減額は正当な権利です！まずは気軽に診断しましょう</h2>
+
+        <p><strong>借金は減額できます。</strong><br>
+          シミュレーター診断を使えば、返済の負担をグッと減らせます。</p>
+      </section>
+
+      <!-- ■画像セクション4 -->
+      <section class="btnSec04 btnSec">
+        <img src="img/008-819x1024.jpg" alt="">
+
+      </section>
+
+      <!-- ■箇条書き -->
+      <section>
+
+        <p>借金を放置しておくと</p>
+        
+        <div class="simple-box6">
+          <ul>
+            <li><strong>督促状が送られてきて家族にバレた！</strong></li>
+            <li><strong>会社に電話がかかってきてバレてしまった！</strong></li>
+            <li><strong>いつの間にか手に負えないほどの金額に！</strong></li>
+          </ul>
+        </div>
+        
+        <p>…などなど、たくさんのリスクが考えられます。</p>
+        
+        <div class="kaisetsu-box2">
+          <div class="kaisetsu-box2-title">借金減額シミュレーターまとめ</div>
+          <ul>
+            <li><strong>2社以上から借り入れをしている人</strong>が対象</li>
+            <li>1分診断で<strong>借金がいくら減るか分かる</strong></li>
+            <li>名前や住所などの個人情報が不要なので<strong>身バレしない</strong></li>
+            <li>診断料は一切かからず<strong>完全無料</strong></li>
+            <li><span class="marker red" ><strong>人によっては借金が0円になる可能性も！</strong></span></li>
+          </ul>
+        </div>
+
+        <p>お金を返しては借りての繰り返し…シミュレーターを使ってそんな生活を抜け出す人が増えてます。</p>
+
+      </section>
+  
+
+      <!-- ■ボタンセクション4 -->
+      <section class="btnSec04 btnSec">
+        <p>
+          <span class="marker">
+            <strong>反響続々！<br>今の借金はいくら減って<br>いつ完済できるかチェック</strong>
+          </span>
+          <br>
+          <strong>↓↓↓</strong>
+        </p>
+
+        <div class="jin-flexbox">
+          <div class="jin-shortcode-button jsb-visual-bound jsb-hover-down">
+            <a href="#" target="_self">
+              <strong>借金減額シミュレーター<br>無料診断はこちら</strong>
+            </a>
+          </div>
+        </div>
+
+        <p>
+          <strong>
+            <span class="red">リスク０で借金減額</span>
+          </strong>
+        </p>
+
+      </section>
+
+      <!-- リンク -->
+      <section class="linkSec">
+        <p style="text-align: right;">
+          <span style="font-size: 12px;">
+            <a href="https://www.shakkin-kaiketsu-seminar.com/company/" target="_blank" rel="noopener noreferrer">運営者情報</a>
+            <br>
+            <a href="https://www.shakkin-kaiketsu-seminar.com/privacy_policy.html" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a>
+          </span>
+        </p>
+      </section>
+  
+      <!-- ■ボタンセクション5 -->
+      <section class="btnSec05 btnSec">
+
+        <h2>無料借金減額シミュレーター</h2>
+
+        <img src="img/kogawa.png" alt="">
+
+        <p>
+          <strong>督促状が届いて家族にバレるかも</strong><br>
+          <strong>職場に電話がかかってくるかも</strong><br>
+          <strong>闇金に手を出してしまいそう……</strong>
+        </p>
+        <p>
+          今の借金はいくらまで減らせるのか<br>
+          まずは匿名診断してみましょう。
+        </p>
+        <p><span class="pink" ><strong>家族・職場へ知られる心配無用！</strong></span></p>
+        <p>▼簡単な質問に答えるだけ</p>
+
+        <div class="jin-flexbox">
+          <div class="jin-shortcode-button jsb-visual-bound jsb-hover-down">
+            <a href="#" target="_self">
+              <strong>借金減額シミュレーター</strong>
+            </a>
+          </div>
+        </div>
+
+      </section>
+
+    </article>
+
+
+    <footer>
+
+      <!-- パンくずリスト -->
+      <div id="breadcrumb" class="topicPath">
+        <ul itemscope="" itemtype="https://schema.org/BreadcrumbList">
           
-        // });
+          <!-- TOPへ戻るボタン -->
+          <div class="page-top-footer">
+            <a class="totop" href="#"><i class="fas fa-chevron-up"></i></a>
+          </div>
+          
+          <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+            <a href="https://tensyoku-ouen.biz/" itemid="https://tensyoku-ouen.biz/" itemscope="" itemtype="https://schema.org/Thing" itemprop="item">
+              <i class="fas fa-home"></i>
+              <span itemprop="name">HOME</span>
+            </a>
+            <meta itemprop="position" content="1">
+          </li>
+          
+          <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+            <i class="fas fa-chevron-right"></i>
+            <a href="https://tensyoku-ouen.biz/category/%e5%80%9f%e9%87%9118/" itemid="https://tensyoku-ouen.biz/category/%e5%80%9f%e9%87%9118/" itemscope="" itemtype="https://schema.org/Thing" itemprop="item">
+              <span itemprop="name">借金18</span>
+            </a>
+            <meta itemprop="position" content="2">
+          </li>
 
-        // リンクのスムーススクロール
-        $(function(){
-          // #で始まるリンクをクリックしたら実行されます
-          $('a[href^="#"]').click(function() {
-            // スクロールの速度
-            let speed = 400; // ミリ秒で記述
-            let href= $(this).attr("href");
-            let target = $(href == "#" || href == "" ? 'html' : href);
-            let position = target.offset().top;
-            $('body,html').animate({scrollTop:position}, speed, 'swing');
-            return false;
+          <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+            <i class="fas fa-chevron-right"></i>
+            <a href="#" itemid="" itemscope="" itemtype="https://schema.org/Thing" itemprop="item">
+              <span itemprop="name"></span>
+            </a>
+            <meta itemprop="position" content="3">
+          </li>
+        </ul>
+
+      </div>
+
+      <!-- メインフッター -->
+      <div class="mainFooter">
+        <div class="footer-inner">
+					<span id="privacy"><a href="https://tensyoku-ouen.biz/">TOP</a></span>
+					<span id="law"><a href="https://tensyoku-ouen.biz/info/">企業情報</a></span>
+					<span id="copyright" itemprop="copyrightHolder">
+            <i class="far fa-copyright"></i>2019–2021</span>
+				</div>
+      </div>
+
+    </footer>
+
+    <!-- 追従TOPへ戻るボタン -->
+    <div id="page-top" >
+      <a class="totop"><i class="fas fa-chevron-up"></i></a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+      // $(function(){
+      //   // メニュー上からスライド
+      //   $("#drawer_toggle").click(function(){
+
+      //     // ハンバーガーアイコン⇔バツアイコンの切り替え
+      //     if($(this).hasClass("fas fa-bars")){
+      //       $(this).removeClass("fas fa-bars");
+      //       $(this).toggleClass("fas fa-times");
+
+      //     }else{
+      //       $(this).removeClass("fas fa-times");
+      //       $(this).toggleClass("fas fa-bars");
+            
+      //     }
+
+      //     // 上からスライド
+      //     $("#global_nav").slideToggle();
+      //   });
+        
+      // });
+
+      // リンクのスムーススクロール
+      $(function(){
+        // #で始まるリンクをクリックしたら実行されます
+        $('a[href^="#"]').click(function() {
+          // スクロールの速度
+          let speed = 300; // ミリ秒で記述
+          let href= $(this).attr("href");
+          let target = $(href == "#" || href == "" ? 'html' : href);
+          let position = target.offset().top;
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+        });
+      });
+
+      $(function() {
+        // 追従ボタン要素
+        var btn = $('#page-top');
+        
+        //スクロールしてページトップから300に達したらボタンを表示
+        $(window).on('load scroll', function(){
+          if($(this).scrollTop() > 300) {
+            btn.fadeIn(1000);
+          }else{
+            btn.fadeOut(1000);
+          }
+        });
+
+        //スクロールしてトップへ戻る
+        btn.on('click',function () {
+          $('body,html').animate({
+            scrollTop: 0
           });
         });
-      </script>
-      <script src="js/script.js"></script>
+      });
+
+    </script>
+    <!-- <script src="js/script.js"></script> -->
       
   </body>
 </html>
