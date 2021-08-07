@@ -35,10 +35,10 @@
 
   <body>
 
-    <header>
-      <div class="headerWrapper">
+    <header class="header-box animate">
+      <div class="headerWrapper animate">
         <span class="tn-logo-size">
-          <a href="" rel="home">
+          <a href="" rel="home" >
             <font color="FDD835">Panna</font>cotta
           </a>
         </span>
@@ -48,7 +48,7 @@
     <article>
 
       <!-- ■FV -->
-      <section class="fv">
+      <section class="fv animate">
         <p class="category">借金18</p>
         
         <img src="img/fvImg.jpg" alt="fv">
@@ -356,6 +356,18 @@
         
       // });
 
+      // $(document).ready(function(){
+      //   $("#header").slideDown();
+      //   alert("test");
+        
+      // });
+
+      $(window).on('load', function() {
+        $("#header").slideDown(1000);
+        // $(".fv").slideUp(1000);
+        // $(".fv").fadeIn(1000);
+      });
+
       // リンクのスムーススクロール
       $(function(){
         // #で始まるリンクをクリックしたら実行されます
@@ -388,6 +400,7 @@
           $('body,html').animate({
             scrollTop: 0
           });
+          return false;
         });
       });
 

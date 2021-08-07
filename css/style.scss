@@ -464,3 +464,98 @@ footer{
     }
     
 }
+
+// ボタンがバウンドするアニメーション
+.jin-flexbox .jsb-visual-bound {
+    animation: 2s jin-bound ease infinite;
+}
+@keyframes jin-bound {
+    0% {
+        transform: translateY(0px); }
+    5% {
+        transform: translateY(-10px); }
+    12% {
+        transform: translateY(0px); }
+    18% {
+        transform: translateY(-10px); }
+    24% {
+        transform: translateY(0px); }
+    100% {
+        transform: translateY(0px); } 
+}
+
+// ホバーしたら縮むアニメーション
+.jsb-hover-down {
+    a{
+        transition: .3s;
+        &:hover {
+            transform: scale(0.95); 
+        }
+    }
+}
+
+
+.header-box.animate {
+    animation-name: down-fade-animation;
+    animation-duration: 0.6s; 
+}
+
+.headerWrapper.animate {
+    animation-name: up-fade-animation;
+    animation-duration: 0.6s;
+    animation-delay: 0.6s;
+    animation-fill-mode: forwards;
+    filter: opacity(0);
+    // position: relative;
+    // z-index: 4; 
+}
+.fv.animate {
+    animation-name: up-fade-animation;
+    animation-duration: 0.8s;
+    animation-delay: 0.8s;
+    animation-fill-mode: forwards;
+    filter: opacity(0);
+    // position: relative;
+    // z-index: 4; 
+}
+
+
+@keyframes down-fade-animation {
+    0% {
+        transform: translateY(-60px);
+        filter: opacity(0); 
+    }
+    100% {
+        transform: translateY(0px);
+        filter: opacity(1); 
+    } 
+}
+@keyframes up-fade-animation {
+    0% {
+        transform: translateY(10px);
+        filter: opacity(0); 
+    }
+    100% {
+        transform: translateY(0px);
+        filter: opacity(1); 
+    } 
+}
+
+// まだ未使用
+//       @keyframes fade-animation {
+//     0% {
+//       filter: opacity(0); }
+//     100% {
+//       filter: opacity(1); } }
+//   @keyframes pickup-animate {
+//     0% {
+//       opacity: 0; }
+//     100% {
+//       opacity: 1; } }
+//   @keyframes pickup-menu-animate {
+//     0% {
+//       transform: translateY(30px);
+//       filter: opacity(0); }
+//     100% {
+//       transform: translateY(0px);
+//       filter: opacity(1); } }
