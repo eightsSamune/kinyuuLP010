@@ -43,7 +43,20 @@
             <font color="FDD835">Panna</font>cotta
           </a>
         </span>
+
+        
       </div>
+
+      <div class="hmBtn sp_only">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav id="navMenu">
+        <a class="navTitle" href="">MENU</a>
+      </nav>
+
     </header>
 
     <article class="animate">
@@ -138,7 +151,6 @@
         <img src="img/fb03.png" alt="">
 
       </section>
-
 
       <!-- ■ボタンセクション３ -->
       <section class="btnSec03 btnSec">
@@ -344,32 +356,19 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script>
-      // $(function(){
-      //   // メニュー上からスライド
-      //   $("#drawer_toggle").click(function(){
+      $(function(){
+        // ハンバーガーボタンクリックイベント
+        $(".hmBtn").click(function(){
 
-      //     // ハンバーガーアイコン⇔バツアイコンの切り替え
-      //     if($(this).hasClass("fas fa-bars")){
-      //       $(this).removeClass("fas fa-bars");
-      //       $(this).toggleClass("fas fa-times");
+            $(this).toggleClass("active");
+            $('body').toggleClass('fixed');// ナビ展開時スクロールを禁止
 
-      //     }else{
-      //       $(this).removeClass("fas fa-times");
-      //       $(this).toggleClass("fas fa-bars");
-            
-      //     }
-
-      //     // 上からスライド
-      //     $("#global_nav").slideToggle();
-      //   });
+          // 上からスライド
+          $("#navMenu").slideToggle();
+        });
         
-      // });
+      });
 
-      // $(document).ready(function(){
-      //   $("#header").slideDown();
-      //   alert("test");
-        
-      // });
 
       // リンクのスムーススクロール
       $(function(){
@@ -408,20 +407,18 @@
       });
 
 
+      // 画面サイズでリンク先を変更
       $(window).resize(function(event){
         var width = $(window).width();
-
-        // $(".output1").text("横のサイズ" + width + "px");
-
         var targetElm = $(".symBtn");
 
-        // 条件を設定する
         if (width <= 768) {
+          // スマホ用リンク
           targetElm.attr("href", "https://kogawa-saimuseiri.net/s/form/type2.php");
         }
         else {
+          // PC用
           targetElm.attr("href", "https://kogawa-saimuseiri.net/form/type2.php");
-          // $("h2").css("background", "skyblue");
         }
 
       });
