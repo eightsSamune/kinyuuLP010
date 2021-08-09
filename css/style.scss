@@ -56,6 +56,10 @@ header{
     
     position: relative;
     
+    #title{
+        font-size: 2.4rem;
+    }
+
     .headerWrapper{
         color: #fff;
         min-height: 60px;
@@ -66,10 +70,6 @@ header{
 
         display: flex;
         align-items: center;
-        
-        font-size: 2.4rem;
-
-        // position: relative;
         
         a{
             letter-spacing: 3px;
@@ -121,6 +121,7 @@ header{
         letter-spacing: 0.05em;
         line-height: 1.8em;
         font-size: 1.6em;
+        // padding-bottom: 0;
         
         strong{        
             padding-bottom: 2rem;
@@ -129,6 +130,10 @@ header{
             margin-bottom: 0;
             font-weight: 500;
         }
+    }
+
+    .btnSubTilte{
+        padding-bottom: 0;
     }
 
     .jin-flexbox{
@@ -163,14 +168,8 @@ header{
 }
 
 .h2Title{
-
     font-family: 'Noto Sans JP', sans-serif;
-
-    // font-size: 2.6rem;
-    // font-weight: 400;
-
     border-color: #4696a3!important;
-
 
     line-height: 3rem;
     padding: 15px 12px;
@@ -281,7 +280,6 @@ header{
         width: 100%;
         padding: 12px 0;
         text-align: center;
-        // background: #aaa;
         letter-spacing: 0px;
     }
 
@@ -426,7 +424,10 @@ footer{
 
     cursor: pointer;
 
+    letter-spacing: 0;
+
     i{
+        // ホバーしたときのアイコンのアニメーション
         -webkit-transition: color 0.4s ease, 
             background 0.4s ease, 
             transform 0.4s ease, 
@@ -457,10 +458,13 @@ footer{
     z-index: 10;
 
     .totop{
-        padding: 4px 12px;
+        padding: 2px 10px;
         background-color: #60605a;
         border-radius: 30px;
 
+        // width: 42px;
+        // height: 42px;
+        
         i{
             color: #fff;
         }
@@ -544,22 +548,3 @@ article.animate {
         filter: opacity(1); 
     } 
 }
-
-// まだ未使用
-//       @keyframes fade-animation {
-//     0% {
-//       filter: opacity(0); }
-//     100% {
-//       filter: opacity(1); } }
-//   @keyframes pickup-animate {
-//     0% {
-//       opacity: 0; }
-//     100% {
-//       opacity: 1; } }
-//   @keyframes pickup-menu-animate {
-//     0% {
-//       transform: translateY(30px);
-//       filter: opacity(0); }
-//     100% {
-//       transform: translateY(0px);
-//       filter: opacity(1); } }
