@@ -108,6 +108,9 @@
   .btnSec .jin-flexbox .jin-shortcode-button a {
     width: 280px;
   }
+  .btnSec p strong {
+    font-weight: 700;
+  }
   .h2Title {
     line-height: 2.9rem;
     padding: 10px 12px;

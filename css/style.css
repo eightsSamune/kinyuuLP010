@@ -95,10 +95,8 @@ header .headerWrapper a {
   color: #fff;
 }
 
-.fv .fvpr {
-  font-size: 1.0rem;
-  padding: 30px 0;
-  text-align: right;
+.fv img {
+  margin-bottom: 20px;
 }
 
 .imgSec img + img {
@@ -181,6 +179,10 @@ header .headerWrapper a {
   background: #000;
   opacity: 0.05;
   background-color: #4696a3;
+}
+
+.simple-box-sec {
+  margin-top: 30px;
 }
 
 .simple-box6 {
